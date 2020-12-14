@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <title>palindrome</title>
+<h4> check the value is palindrome or not</h4>
+
+<body>
+
+    <form id="palin">
+        <p>check
+            <input></input></p>
+        <button onclick="palindrome()" type="button">submit</button>
+    </form>
+
+
+
+
+    <script>
+        function palindrome() {
+
+
+            var p = document.getElementById("palin").elements[0].value;
+            var s = p.split("");// it splits the sting into an array
+            var a = s.reverse();// it reverse the array
+            var b = a.join(""); // it join the reverse  array
+
+            if (p == b) {
+                document.write(p + " is palindrome"); //check the condition weather the value is palindrome or not
+            }
+            else {
+                document.write(p + " not palindrome");
+            }
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

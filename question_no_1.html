@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<title>largest element</title>
+<h4> function that returns the largest element in a list.</h4>
+
+<body>
+
+
+
+    <p id="maxm"></p>
+
+
+    <script>
+        var a = [24, 56, 76, 89, 35, 100];// list assign
+        a.sort(function (a, b) { return b - a });//Sorting descending to get highest value in an list
+        var b = document.getElementById("maxm").innerHTML = a[0];
+        document.write("largest element is ", b);
+
+
+    </script>
+
+</body>
+
+</html>
