@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <h4> reverse the list</h4>
+<title>odd position</title>
+<h4>function that returns the elements on odd positions in a list.</h4>
+
 <body>
-  
 
 
-<p id="odd"></p>
+
+    <p id="odd"></p>
 
 
-<script>
-var a=["ankush", "karan", "vishal", "raza","saurabh"];
-var b=a-1;
-for(i=0; i<=b ; i++){
-    if(i %3==0){
-        console.log(i);
-    
-    }
-    
-   
+    <script>
+        var a = ["ankush", "karan", "vishal", "raza", "saurabh"];
+        var b = a.length;
+        for (i = 0; i <= b - 1; i++) {
+            if (i % 2 != 0) {
+                document.write(" ", a[i]);
 
-}
-</script>
+            }
+
+
+
+        }
+    </script>
 
 </body>
+
 </html>
